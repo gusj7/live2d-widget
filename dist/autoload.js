@@ -26,6 +26,8 @@ function loadExternalResource(url, type) {
 }
 
 // 如果担心手机上显示效果不佳，可以通过 `if (screen.width >= 768)` 来判断是否加载
+if (screen.width >= 768)
+{
 (async () => {
   // 避免图片资源跨域问题
   const OriginalImage = window.Image;
@@ -53,7 +55,7 @@ function loadExternalResource(url, type) {
 })();
 
 console.log(`\n%cLive2D%cWidget%c\n`, 'padding: 8px; background: #cd3e45; font-weight: bold; font-size: large; color: white;', 'padding: 8px; background: #ff5450; font-size: large; color: #eee;', '');
-
+}
 /*
 く__,.ヘヽ.        /  ,ー､ 〉
          ＼ ', !-─‐-i  /  /´
